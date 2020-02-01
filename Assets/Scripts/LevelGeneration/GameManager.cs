@@ -12,17 +12,30 @@ public class GameManager : MonoBehaviour
     public LevelGenerator generator;
 
     [Header("UI")]
-    public GameObject respawn;
+    public GameObject respawnUI;
 
+    public UICounter deathsCounters;
+    public UICounter photosCounters;
+
+    private int deaths;
+    private int photos;
+
+    // =====================================
     void Awake()
     {
         current = this;
+
+        this.deaths = 0;
+        this.photos = 0;
+
+        this.deathsCounters.Write(this.deaths);
+        this.photosCounters.Write(this.photos);
     }
 
     // =====================================
     void Start()
     {
-        this.respawn.SetActive(false);
+        this.respawnUI.SetActive(false);
         this.generator.Generate();
 
         this.MocoStart(this.generator.playerStart);
@@ -31,16 +44,26 @@ public class GameManager : MonoBehaviour
     // =====================================
     private void MocoStart(Transform start)
     {
-        this.respawn.SetActive(false);
+        this.respawnUI.SetActive(false);
         var go = Instantiate(this.playerPrefab, start.position, Quaternion.identity);
 
         this.follow.target = go.transform;
     }
 
     // =====================================
+    public void OnPhoto()
+    {
+        this.photos++;
+        this.photosCounters.Write(this.photos);
+    }
+
+    // =====================================
     public void OnPlayerDeath()
     {
-        this.respawn.SetActive(true);
+        this.deaths++;
+        this.deathsCounters.Write(this.deaths);
+
+        this.respawnUI.SetActive(true);
     }
 
     // =====================================
@@ -49,6 +72,7 @@ public class GameManager : MonoBehaviour
         this.MocoStart(this.generator.playerStart);
     }
 
+    // =====================================
     public void ExitGame()
     {
         Debug.LogError("LOAD MENU!");

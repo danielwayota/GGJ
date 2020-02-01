@@ -19,6 +19,5 @@ public class Spikes : MonoBehaviour
     {
         var moco = other.gameObject.GetComponent<Moco>(); //Salta al tocarse "SOLAMENTE" con el moco.
         moco.Die(); //El moco desaparece al tocar los pinchos.
-        Debug.Log("Te has muerto");
     }
 }

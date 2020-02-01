@@ -20,6 +20,8 @@ public class Photo : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         this.grave = FindObjectOfType<Grave>();
+        GameManager.current.OnPhoto();
+
         if (this.grave == null)
         {
             Debug.LogError("NO HAY TUMBA!");
