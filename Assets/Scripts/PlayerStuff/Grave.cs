@@ -32,7 +32,4 @@ public class Grave : MonoBehaviour
             Loading.LoadScene(SceneNames.FINAL);
         }
     }
-
-
-
 }
