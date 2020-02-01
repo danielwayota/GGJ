@@ -22,19 +22,28 @@ public class Moco : MonoBehaviour
     // ====================================
     void Update()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        bool jump = Input.GetButton("Jump");
+        Vector2 movement = this.body.velocity;
 
-        Vector2 movement = h * Vector2.right * speed;
-        movement.y = this.body.velocity.y;
+        float horizontal = Input.GetAxis("Horizontal") * speed;
+        if (this.IsGrounded())
+        {
+            movement.x = horizontal;
+        }
+        else
+        {
+            movement.x += horizontal * 0.1f;
+        }
 
-        if (jump)
+        if (Input.GetButton("Jump"))
         {
             if (this.IsGrounded())
             {
-                movement.y = Mathf.Clamp(movement.y + this.jumpPower, 0, this.jumpPower);
+                movement.y += this.jumpPower * 0.25f;
             }
         }
+
+        movement.x = Mathf.Clamp(movement.x, -this.speed, this.speed);
+        movement.y = Mathf.Clamp(movement.y, -this.jumpPower, this.jumpPower);
 
         this.body.velocity = movement;
     }

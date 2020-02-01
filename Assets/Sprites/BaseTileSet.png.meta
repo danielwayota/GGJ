@@ -67,7 +67,7 @@ TextureImporter:
     second: BaseTileSet_8
   - first:
       213: 4794580519799912983
-    second: BaseTileSet_9
+    second: MocoFall
   - first:
       213: 837218877369902658
     second: BaseTileSet_10
@@ -110,6 +110,18 @@ TextureImporter:
   - first:
       213: -8415522468440724871
     second: BaseTileSet_23
+  - first:
+      213: 6419370837640365606
+    second: MocoJump
+  - first:
+      213: -7910586092211805743
+    second: Grave
+  - first:
+      213: 7906298264165193615
+    second: BaseTileSet_2
+  - first:
+      213: 5314728847261098439
+    second: BaseTileSet_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -214,7 +226,7 @@ TextureImporter:
         width: 86
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,7 +247,7 @@ TextureImporter:
         width: 35
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,7 +268,7 @@ TextureImporter:
         width: 35
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,7 +289,7 @@ TextureImporter:
         width: 58
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,7 +310,7 @@ TextureImporter:
         width: 99
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,7 +331,7 @@ TextureImporter:
         width: 85
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,7 +352,7 @@ TextureImporter:
         width: 34
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,7 +373,7 @@ TextureImporter:
         width: 105
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,7 +394,7 @@ TextureImporter:
         width: 69
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,7 +415,7 @@ TextureImporter:
         width: 69
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,7 +436,7 @@ TextureImporter:
         width: 108
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,7 +457,7 @@ TextureImporter:
         width: 106
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,7 +478,7 @@ TextureImporter:
         width: 79
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -487,7 +499,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,7 +520,7 @@ TextureImporter:
         width: 126
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,7 +541,7 @@ TextureImporter:
         width: 127
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,7 +562,7 @@ TextureImporter:
         width: 126
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -571,7 +583,7 @@ TextureImporter:
         width: 104
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -592,7 +604,7 @@ TextureImporter:
         width: 105
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -613,7 +625,7 @@ TextureImporter:
         width: 107
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -626,7 +638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseTileSet_9
+      name: MocoFall
       rect:
         serializedVersion: 2
         x: 4
@@ -634,7 +646,7 @@ TextureImporter:
         width: 118
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -642,6 +654,48 @@ TextureImporter:
       bones: []
       spriteID: 71a7ea97495c98240800000000000000
       internalID: 4794580519799912983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MocoJump
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 912
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6264e0bf3cf261950800000000000000
+      internalID: 6419370837640365606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grave
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 898
+        width: 129
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1e1987cd3f73290800000000000000
+      internalID: -7910586092211805743
       vertices: []
       indices: 
       edges: []
