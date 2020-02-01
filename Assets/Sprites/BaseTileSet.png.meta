@@ -16,7 +16,7 @@ TextureImporter:
     second: TNT
   - first:
       213: -9008408035071160061
-    second: SpikeBoi
+    second: SpikeBoi_1
   - first:
       213: -8486595220777482731
     second: Puff_1
@@ -38,6 +38,78 @@ TextureImporter:
   - first:
       213: 4365888045920201152
     second: FloorSpikes
+  - first:
+      213: -8718454519792089326
+    second: BomberMan
+  - first:
+      213: 6532413673160468380
+    second: Photo_1
+  - first:
+      213: -3204888610915330252
+    second: Photo_2
+  - first:
+      213: -9005796455786754132
+    second: Photo_3
+  - first:
+      213: 8855023040795354212
+    second: Photo_4
+  - first:
+      213: 6297100546621203551
+    second: SpikeBoi_2
+  - first:
+      213: -6381162461717707121
+    second: SpikeBoi_3
+  - first:
+      213: 6747624930842216833
+    second: SpikeBoi_4
+  - first:
+      213: 6823585444247626681
+    second: BaseTileSet_8
+  - first:
+      213: 4794580519799912983
+    second: BaseTileSet_9
+  - first:
+      213: 837218877369902658
+    second: BaseTileSet_10
+  - first:
+      213: 5198415727233546083
+    second: BaseTileSet_11
+  - first:
+      213: 5910644180788391453
+    second: BaseTileSet_12
+  - first:
+      213: 8934080556140068875
+    second: BaseTileSet_13
+  - first:
+      213: 476740691945443158
+    second: BaseTileSet_14
+  - first:
+      213: -3301473238192477383
+    second: BaseTileSet_15
+  - first:
+      213: -4500164096364830138
+    second: BaseTileSet_16
+  - first:
+      213: 8782956561905146669
+    second: BaseTileSet_17
+  - first:
+      213: -1789415942581326392
+    second: BaseTileSet_18
+  - first:
+      213: 2484865102352798545
+    second: BaseTileSet_19
+  - first:
+      213: 1134779641830999863
+    second: BaseTileSet_20
+  - first:
+      213: 8800765019043319311
+    second: BaseTileSet_21
+  - first:
+      213: -1545524561492477553
+    second: BaseTileSet_22
+  - first:
+      213: -8415522468440724871
+    second: BaseTileSet_23
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -142,7 +214,7 @@ TextureImporter:
         width: 86
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,7 +235,7 @@ TextureImporter:
         width: 35
         height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,7 +256,7 @@ TextureImporter:
         width: 35
         height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,12 +272,12 @@ TextureImporter:
       name: TNT
       rect:
         serializedVersion: 2
-        x: 415
+        x: 414
         y: 1163
-        width: 57
+        width: 58
         height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,15 +290,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpikeBoi
+      name: SpikeBoi_1
       rect:
         serializedVersion: 2
-        x: 527
-        y: 1159
-        width: 94
-        height: 103
+        x: 528
+        y: 1165
+        width: 99
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,12 +314,12 @@ TextureImporter:
       name: Puff_1
       rect:
         serializedVersion: 2
-        x: 667
+        x: 666
         y: 1154
-        width: 84
+        width: 85
         height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,7 +340,7 @@ TextureImporter:
         width: 34
         height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,12 +356,12 @@ TextureImporter:
       name: Ground
       rect:
         serializedVersion: 2
-        x: 904
-        y: 1157
-        width: 102
-        height: 66
+        x: 903
+        y: 1155
+        width: 105
+        height: 69
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,7 +382,7 @@ TextureImporter:
         width: 69
         height: 123
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -331,7 +403,7 @@ TextureImporter:
         width: 69
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -352,7 +424,7 @@ TextureImporter:
         width: 108
         height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -373,7 +445,7 @@ TextureImporter:
         width: 106
         height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,6 +453,195 @@ TextureImporter:
       bones: []
       spriteID: 0c9a23adb00c69c30800000000000000
       internalID: 4365888045920201152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BomberMan
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1033
+        width: 79
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217c46d7ec3d10780800000000000000
+      internalID: -8718454519792089326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photo_1
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1023
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9762a220abc7aa50800000000000000
+      internalID: 6532413673160468380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photo_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43752b1e9c2f583d0800000000000000
+      internalID: -3204888610915330252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photo_3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1023
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafcb5596dbf40380800000000000000
+      internalID: -9005796455786754132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photo_4
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1022
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464a1882a8c53ea70800000000000000
+      internalID: 8855023040795354212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpikeBoi_2
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1040
+        width: 104
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54664c659bc36750800000000000000
+      internalID: 6297100546621203551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpikeBoi_3
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1042
+        width: 105
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f864247cc8e8177a0800000000000000
+      internalID: -6381162461717707121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpikeBoi_4
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1038
+        width: 107
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1898b68cf1164ad50800000000000000
+      internalID: 6747624930842216833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaseTileSet_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 903
+        width: 118
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a7ea97495c98240800000000000000
+      internalID: 4794580519799912983
       vertices: []
       indices: 
       edges: []
