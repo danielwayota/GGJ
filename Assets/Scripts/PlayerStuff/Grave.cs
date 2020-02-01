@@ -29,7 +29,7 @@ public class Grave : MonoBehaviour
         }
         else
         {
-            Debug.Log("Tienes todas las fotos.");
+            Loading.LoadScene(SceneNames.FINAL);
         }
     }
 

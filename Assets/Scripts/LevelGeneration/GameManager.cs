@@ -76,6 +76,6 @@ public class GameManager : MonoBehaviour
     // =====================================
     public void ExitGame()
     {
-        SceneManager.LoadScene(SceneNames.MENU);
+        Loading.LoadScene(SceneNames.MENU);
     }
 }

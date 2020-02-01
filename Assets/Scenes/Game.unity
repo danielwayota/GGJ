@@ -157,8 +157,8 @@ MonoBehaviour:
   - {fileID: 6527392445819866363, guid: fa01181e60368c19380b3cec3d66d5f2, type: 3}
   - {fileID: 752723914797303275, guid: a2bca0c59cb664d60aee6753740e9fe0, type: 3}
   - {fileID: 7346924152812887137, guid: 53161ded8d23a55dcac18dadae32b55d, type: 3}
-  minRoomCount: 4
-  maxRoomCount: 8
+  minRoomCount: 8
+  maxRoomCount: 10
 --- !u!4 &69839778
 Transform:
   m_ObjectHideFlags: 0

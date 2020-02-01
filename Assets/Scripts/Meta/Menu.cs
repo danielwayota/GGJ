@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
@@ -6,9 +8,13 @@ public class Menu : MonoBehaviour
     public GameObject menu;
     public GameObject credits;
 
+    public AudioSource blup;
+
     public void Play()
     {
-        this.LoadLevel(SceneNames.GAME);
+        this.blup.Play();
+
+        StartCoroutine(this.LoadLevel(SceneNames.GAME));
     }
 
     public void Credits()
@@ -29,9 +35,10 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
-
-    private void LoadLevel(string levelname)
+    private IEnumerator LoadLevel(string levelname)
     {
+        yield return new WaitForSeconds(0.5f);
+
         Loading.LoadScene(levelname);
     }
 }
