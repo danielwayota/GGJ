@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour
 
     public void Play()
     {
-        LoadLevel(SceneNames.GAME);
+        this.LoadLevel(SceneNames.GAME);
     }
 
     public void Credits()
@@ -32,6 +32,6 @@ public class Menu : MonoBehaviour
 
     private void LoadLevel(string levelname)
     {
-        SceneManager.LoadScene(levelname);
+        Loading.LoadScene(levelname);
     }
 }
