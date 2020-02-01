@@ -6,6 +6,9 @@ public class Moco : MonoBehaviour
     public float speed = 1f;
     public float jumpPower = 10f;
 
+    [Header("Sound")]
+    public AudioSource jump;
+
     [Header("Ground checks")]
     public LayerMask mask;
     public float checkRadius;
@@ -50,6 +53,7 @@ public class Moco : MonoBehaviour
             if (grounded)
             {
                 movement.y = this.jumpPower;
+                this.jump.Play();
             }
         }
 

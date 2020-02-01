@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     private int deaths;
     private int photos;
 
+    [Header("Sounds")]
+    public AudioSource eeh;
+
     // =====================================
     void Awake()
     {
@@ -61,6 +64,8 @@ public class GameManager : MonoBehaviour
     // =====================================
     public void OnPlayerDeath()
     {
+        this.eeh.Play();
+
         this.deaths++;
         this.deathsCounters.Write(this.deaths);
 
