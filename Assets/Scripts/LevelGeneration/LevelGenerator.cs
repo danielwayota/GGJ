@@ -3,11 +3,6 @@ using System.Collections.Generic;
 
 public class LevelGenerator : MonoBehaviour
 {
-    [Header("Player")]
-    public GameObject playerPrefab;
-
-    public CameraFollow follow;
-
     [Header("Room generation")]
     public GameObject start;
     public GameObject end;
@@ -19,8 +14,10 @@ public class LevelGenerator : MonoBehaviour
 
     private List<Room> rooms;
 
+    public Transform playerStart {get; protected set;}
+
     // =====================================
-    void Start()
+    public void Generate()
     {
         this.rooms = new List<Room>();
 
@@ -40,15 +37,8 @@ public class LevelGenerator : MonoBehaviour
         this.CreateRoom(this.end, next);
 
         StartRoom start = (StartRoom) this.rooms[0];
-        this.MocoStart(start.playerSpawn);
-    }
 
-    // =====================================
-    private void MocoStart(Transform start)
-    {
-        var go = Instantiate(this.playerPrefab, start.position, Quaternion.identity);
-
-        this.follow.target = go.transform;
+        this.playerStart = start.playerSpawn;
     }
 
     // =====================================
