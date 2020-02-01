@@ -3,13 +3,24 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public GameObject menu;
+    public GameObject credits;
+
     public void Play()
     {
-
+        LoadLevel(SceneNames.GAME);
     }
 
     public void Credits()
     {
+        this.menu.SetActive(false);
+        credits.SetActive(true);
+
+    }
+    public void BackMenu()
+    {
+        this.menu.SetActive(true);
+        credits.SetActive(false);
 
     }
 
