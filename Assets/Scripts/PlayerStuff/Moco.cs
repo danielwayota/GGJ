@@ -9,23 +9,34 @@ public class Moco : MonoBehaviour
     [Header("Ground checks")]
     public LayerMask mask;
     public float checkRadius;
-    public Transform checkPoint;
+    public Transform[] checkPoints;
 
     private Rigidbody2D body;
+
+    private Animator animator;
+    private bool facingRight;
 
     // ====================================
     void Start()
     {
+        this.animator = this.GetComponent<Animator>();
         this.body = this.GetComponent<Rigidbody2D>();
+
+        this.facingRight = true;
     }
 
     // ====================================
     void Update()
     {
         Vector2 movement = this.body.velocity;
-
         float horizontal = Input.GetAxis("Horizontal") * speed;
-        if (this.IsGrounded())
+
+        bool grounded = this.IsGrounded();
+        this.animator.SetBool("Ruuning", horizontal != 0);
+        this.animator.SetBool("OnAir", !grounded);
+        this.animator.SetFloat("FallSpeed", movement.y);
+
+        if (!grounded)
         {
             movement.x = horizontal;
         }
@@ -36,11 +47,13 @@ public class Moco : MonoBehaviour
 
         if (Input.GetButton("Jump"))
         {
-            if (this.IsGrounded())
+            if (grounded)
             {
                 movement.y = this.jumpPower;
             }
         }
+
+        this.DoTheFlip(movement.x);
 
         movement.x = Mathf.Clamp(movement.x, -this.speed, this.speed);
         movement.y = Mathf.Clamp(movement.y, -this.jumpPower, this.jumpPower);
@@ -49,17 +62,42 @@ public class Moco : MonoBehaviour
     }
 
     // ====================================
+    private void DoTheFlip(float hVel)
+    {
+        if (hVel > 0 && !this.facingRight)
+        {
+            this.transform.localScale = Vector3.one;
+
+            this.facingRight = true;
+        }
+        else if (hVel < 0 && this.facingRight)
+        {
+            this.transform.localScale = new Vector3(-1, 1, 1);
+
+            this.facingRight = false;
+        }
+    }
+
+    // ====================================
     private bool IsGrounded()
     {
-        var hit = Physics2D.Raycast(this.checkPoint.position, Vector2.down, this.checkRadius, this.mask);
+        bool grounded = false;
 
-        return hit.collider != null;
+        foreach (var point in this.checkPoints) {
+            var hit = Physics2D.Raycast(point.position, Vector2.down, this.checkRadius, this.mask);
+
+            grounded |= hit.collider != null;
+        }
+
+        return grounded;
     }
 
     // ====================================
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(this.checkPoint.position, this.checkRadius);
+        foreach (var point in this.checkPoints) {
+            Gizmos.DrawWireSphere(point.position, this.checkRadius);
+        }
     }
 
     // ====================================
