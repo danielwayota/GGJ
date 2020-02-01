@@ -150,6 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc6781df81c3984baa8660f19ea206e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 2870095557010190486, guid: c8c7e7e7423d59d4fab1e5e59601dfd2,
+    type: 3}
+  follow: {fileID: 1541857654}
   start: {fileID: 246066307264840324, guid: c95bd0ed02d6c006d807c355a80f9132, type: 3}
   end: {fileID: 5190685123051278816, guid: 6e513fee833ccb7b4bcd201faa9c206e, type: 3}
   roomPrefabs:
@@ -184,6 +187,7 @@ GameObject:
   - component: {fileID: 1541857653}
   - component: {fileID: 1541857652}
   - component: {fileID: 1541857651}
+  - component: {fileID: 1541857654}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -256,3 +260,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1541857654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541857650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8525e8db031574a9af1e4ad0c688b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  offset: {x: 0, y: 0, z: -10}

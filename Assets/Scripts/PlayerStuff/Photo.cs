@@ -10,11 +10,7 @@ public class Photo : MonoBehaviour
     //Constructor.
     private void Awake()
     {
-        this.grave = FindObjectOfType<Grave>();
-        if (this.grave == null)
-        {
-            Debug.LogError("NO HAY TUMBA!");
-        }
+
     }
 
     //Métodos.
@@ -23,6 +19,12 @@ public class Photo : MonoBehaviour
     //Método de tocamiento.
     private void OnTriggerEnter2D(Collider2D other)
     {
+        this.grave = FindObjectOfType<Grave>();
+        if (this.grave == null)
+        {
+            Debug.LogError("NO HAY TUMBA!");
+        }
+
         this.grave.FotosRecogidas(); //La foto le manda una señal a tumba.
         this.gameObject.SetActive(false); //La foto desaparece al contacto.
     }
