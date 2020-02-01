@@ -38,7 +38,7 @@ public class Moco : MonoBehaviour
         {
             if (this.IsGrounded())
             {
-                movement.y += this.jumpPower * 0.25f;
+                movement.y = this.jumpPower;
             }
         }
 
