@@ -2314,6 +2314,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundBig (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1463816348098990665, guid: 1c8f4f2d2f2d3364b9711e3211f82cab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1463816348098990666, guid: 1c8f4f2d2f2d3364b9711e3211f82cab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2368,6 +2373,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463816349119708949, guid: 1c8f4f2d2f2d3364b9711e3211f82cab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463816349217032229, guid: 1c8f4f2d2f2d3364b9711e3211f82cab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463816349875112196, guid: 1c8f4f2d2f2d3364b9711e3211f82cab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c8f4f2d2f2d3364b9711e3211f82cab, type: 3}

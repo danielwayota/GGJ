@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pick the 5 Photos!
+  m_Text: Pick up at least 5 <color="#2980b9">pictures</color>!
 --- !u!222 &739053356
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -10,6 +10,10 @@ public class Menu : MonoBehaviour
 
     public AudioSource blup;
 
+
+    public GameObject menuButton;
+    public GameObject creditsButton;
+
     public void Play()
     {
         this.blup.Play();
@@ -22,12 +26,14 @@ public class Menu : MonoBehaviour
         this.menu.SetActive(false);
         credits.SetActive(true);
 
+        UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(this.creditsButton);
     }
     public void BackMenu()
     {
         this.menu.SetActive(true);
         credits.SetActive(false);
 
+        UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(this.menuButton);
     }
 
     public void Exit()
