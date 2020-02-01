@@ -18,7 +18,7 @@ public class Spikes : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         var moco = other.gameObject.GetComponent<Moco>(); //Salta al tocarse "SOLAMENTE" con el moco.
-        moco.gameObject.SetActive(false); //El moco desaparece al tocar los pinchos.
+        moco.Die(); //El moco desaparece al tocar los pinchos.
         Debug.Log("Te has muerto");
     }
 }

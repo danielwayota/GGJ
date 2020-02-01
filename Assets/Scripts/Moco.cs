@@ -52,4 +52,10 @@ public class Moco : MonoBehaviour
     {
         Gizmos.DrawWireSphere(this.checkPoint.position, this.checkRadius);
     }
+
+    // ====================================
+    public void Die()
+    {
+        this.gameObject.SetActive(false);
+    }
 }
