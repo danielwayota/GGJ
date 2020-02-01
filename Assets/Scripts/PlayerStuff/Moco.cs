@@ -29,7 +29,7 @@ public class Moco : MonoBehaviour
     void Update()
     {
         Vector2 movement = this.body.velocity;
-        float horizontal = Input.GetAxis("Horizontal") * speed;
+        float horizontal = Input.GetAxisRaw("Horizontal") * speed;
 
         bool grounded = this.IsGrounded();
         this.animator.SetBool("Ruuning", horizontal != 0);
@@ -103,6 +103,8 @@ public class Moco : MonoBehaviour
     // ====================================
     public void Die()
     {
-        this.gameObject.SetActive(false);
+        Destroy(this.gameObject);
+
+        GameManager.current.OnPlayerDeath();
     }
 }

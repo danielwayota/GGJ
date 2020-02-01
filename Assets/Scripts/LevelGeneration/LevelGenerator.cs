@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class LevelGenerator : MonoBehaviour
 {
+    [Header("Room generation")]
     public GameObject start;
     public GameObject end;
 
@@ -13,8 +14,10 @@ public class LevelGenerator : MonoBehaviour
 
     private List<Room> rooms;
 
+    public Transform playerStart {get; protected set;}
+
     // =====================================
-    void Start()
+    public void Generate()
     {
         this.rooms = new List<Room>();
 
@@ -32,6 +35,10 @@ public class LevelGenerator : MonoBehaviour
         }
 
         this.CreateRoom(this.end, next);
+
+        StartRoom start = (StartRoom) this.rooms[0];
+
+        this.playerStart = start.playerSpawn;
     }
 
     // =====================================
