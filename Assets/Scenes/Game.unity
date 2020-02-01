@@ -150,9 +150,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc6781df81c3984baa8660f19ea206e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: {fileID: 0}
-  end: {fileID: 0}
-  roomPrefabs: []
+  start: {fileID: 246066307264840324, guid: c95bd0ed02d6c006d807c355a80f9132, type: 3}
+  end: {fileID: 5190685123051278816, guid: 6e513fee833ccb7b4bcd201faa9c206e, type: 3}
+  roomPrefabs:
+  - {fileID: 7857633421114822546, guid: c69ebb7f717ce86b4b64150ac456b5b0, type: 3}
+  - {fileID: 6527392445819866363, guid: fa01181e60368c19380b3cec3d66d5f2, type: 3}
+  - {fileID: 752723914797303275, guid: a2bca0c59cb664d60aee6753740e9fe0, type: 3}
+  - {fileID: 7346924152812887137, guid: 53161ded8d23a55dcac18dadae32b55d, type: 3}
   minRoomCount: 4
   maxRoomCount: 8
 --- !u!4 &69839778

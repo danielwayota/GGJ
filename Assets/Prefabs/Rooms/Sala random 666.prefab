@@ -154,6 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7346924152812887138}
+  - component: {fileID: -538837852612777479}
   m_Layer: 0
   m_Name: Sala random 666
   m_TagString: Untagged
@@ -179,6 +180,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-538837852612777479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7346924152812887137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4099910e86b0624459190ae13cfed110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextRoomAnchor: {fileID: 7346924151946889373}
 --- !u!1001 &7346924151306428202
 PrefabInstance:
   m_ObjectHideFlags: 0

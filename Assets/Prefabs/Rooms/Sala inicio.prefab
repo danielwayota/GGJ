@@ -39,6 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 246066307264840325}
+  - component: {fileID: -2016299317281361287}
   m_Layer: 0
   m_Name: Sala inicio
   m_TagString: Untagged
@@ -67,6 +68,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2016299317281361287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246066307264840324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4099910e86b0624459190ae13cfed110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextRoomAnchor: {fileID: 246066306718857183}
 --- !u!1001 &246066306558479481
 PrefabInstance:
   m_ObjectHideFlags: 0
